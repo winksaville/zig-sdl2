@@ -26,7 +26,7 @@ pub const SDL_LOG_PRIORITY_WARN = 4;
 pub const SDL_LOG_PRIORITY_ERROR = 5;
 pub const SDL_LOG_PRIORITY_CRITICAL = 6;
 pub const SDL_NUM_LOG_PRIORITIES = 7;
-pub const SDL_LogPriority = extern enum.{
+pub const SDL_LogPriority = extern enum {
     SDL_LOG_PRIORITY_VERBOSE = 1,
     SDL_LOG_PRIORITY_DEBUG = 2,
     SDL_LOG_PRIORITY_INFO = 3,
@@ -54,4 +54,3 @@ pub extern fn SDL_LogSetOutputFunction(callback: SDL_LogOutputFunction, userdata
 pub extern fn SDL_LogSetPriority(category: c_int, priority: SDL_LogPriority) void;
 pub extern fn SDL_LogVerbose(category: c_int, fmt: [*]const u8) void;
 pub extern fn SDL_LogWarn(category: c_int, fmt: [*]const u8) void;
-
