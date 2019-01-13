@@ -58,3 +58,9 @@ pub use @import("SDL_power.zig");
 // Additional Functionality
 pub use @import("SDL_system.zig");
 pub use @import("SDL_stdinc.zig");
+
+// Add-on libraries See http://hg.libsdl.org/
+// and https://www.libsdl.org/projects/
+
+// Image from https://www.libsdl.org/projects/SDL_image/
+pub use @import("SDL_image.zig");
