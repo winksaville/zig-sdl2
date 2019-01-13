@@ -1,4 +1,6 @@
 use @import("SDL_stdinc.zig");
+use @import("SDL_pixels.zig");
+use @import("SDL_rect.zig");
 
 pub const struct_SDL_Surface = extern struct {
     flags: u32,
@@ -11,7 +13,7 @@ pub const struct_SDL_Surface = extern struct {
     locked: c_int,
     lock_data: ?*c_void,
     clip_rect: SDL_Rect,
-    map: ?*struct_SDL_BlitMap,
+    map: ?*c_void,
     refcount: c_int,
 };
 pub const SDL_Surface = struct_SDL_Surface;
